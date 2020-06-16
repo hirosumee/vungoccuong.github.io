@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:description" content="BEEN TOGETHER">
+    <meta property="description" content="BEEN TOGETHER">
+    <meta property="og:image" content="img/heart.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="BEEN TOGETHER">
+    <meta name="theme-color" content="#29434d"/>
+    <link rel="apple-touch-icon" href="img/heart.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/heart.png">
+    <script src="main.js"></script>
+    <title>BEEN TOGETHER</title>
+</head>
+<body>
+
+<h1 class="title">BEEN TOGETHER</h1>
+
+<div class="box">
+
+    <div class="about">
+        <div class="info">
+            <img src="img/male.jpg" class="avatar">
+            <div class="details">
+                <p class="name">Ginne</p>
+                <p class="born">29.09.1998</p>
+            </div>
+        </div>
+
+        <div class="heart-box">
+            <img src="img/hearts.svg" class="heart">
+        </div>
+
+        <div class="info">
+            <img src="img/female.jpg" class="avatar">
+            <div class="details">
+                <p class="name">Mật</p>
+                <p class="born">15.02.1998</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="time">
+        <h2 class="days"><span>00</span>&nbsp;DAYS</h2>
+        <p class="sup-time">
+            <span class="hour">10</span>:<span class="min">20</span>:<span class="second">16</span>
+        </p>
+    </div>
+
+    <p class="say-thank">Nếu yêu em là điều may mắn thứ 2 .</p>
+    <p class="say-thank overflow">Thì được em yêu chính là điều may mắn nhất !</p>
+</div>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+    });
+  }
+</script>
+</body>
+</html>
